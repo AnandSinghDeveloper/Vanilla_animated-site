@@ -1,0 +1,154 @@
+*{
+  margin: 0px ;
+  padding: 0px;
+  font-family:    sans-serif;
+  box-sizing: border-box;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+}
+
+#nav{
+  padding: 3vw 10vw;
+/* background-color: rgba(197, 210, 181, 0.797); */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nleft{
+  display: flex;
+  gap: 30px;
+  
+
+}
+
+#nav a{
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  font-weight: 500;
+
+}
+
+#nav #centretag{
+  position: absolute;
+  font-size: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.hero{
+  width: 100%;
+  /* height: 100px; */
+  margin-top: 15vw;
+  padding: 0vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.sustain{
+  width: 12vw;
+}
+
+.sustain .susimagerapper{
+  width: 100%;
+  height: 18vw;
+  /* background-color: aquamarine; */
+  position: relative;
+  overflow: hidden;
+}
+
+
+.sustain p {
+  font-size: 14px;
+  margin: 10px 0;
+  font-weight: 500;
+  opacity: .5;
+  text-transform: capitalize;
+  line-height: 1;
+
+
+}
+
+.susimagerapper img{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 140%;
+  height: 140%;
+  object-fit: cover;
+}
+
+.ephemeral{
+  width:30vw ;
+  min-width:30vw ;
+  /* background-color: bisque; */
+  position: relative;
+}
+.imgandtext{
+  width: fit-content;
+  height: fit-content;
+  /* background-color: aquamarine; */
+  /* position: absolute; */
+}
+.ephemeral img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ephemeral .headings{
+   position: absolute;
+   top: -16%;
+   left: -13.5%;
+}
+.ephemeral p {
+  /* position: absolute; */
+  font-size: 1.3vw;
+  letter-spacing: -0.5;
+  line-height: 1.2;
+  width: 40%;
+  /* top: 105%; */
+
+}
+.ephemeral h1{
+  letter-spacing: -.4vw;
+  line-height: 0.8;
+  font-size: 6vw;
+  font-weight: 400;
+}
+
+.circle{
+  border-radius: 50%;
+  border: 1px solid #5e5e5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 3vw;
+}
+.visit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.visit h3{
+  font-weight: 400;
+  color: #5e5e5e;
+}
+.motive{
+  padding: 3vw 10vw;
+}
+
+.motive h3{
+  font-weight: 400;
+  opacity: .5;
+}
