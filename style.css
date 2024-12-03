@@ -18,6 +18,17 @@
   position: relative;
 }
 
+/* #nav a:hover {
+  color: var(--highlight-color);
+  transition: color 0.3s ease-in-out;
+}
+.ftext button:hover {
+  background-color: var(--highlight-color);
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+} */
+
+
 .nleft{
   display: flex;
   gap: 30px;
@@ -26,10 +37,12 @@
 }
 
 #nav a{
+  display: inline-block;
   text-decoration: none;
   font-size: 12px;
   color: black;
   font-weight: 500;
+ 
 
 }
 
@@ -130,25 +143,249 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3vw;
-  height: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
 }
-.visit{
+.visit {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px; 
+  margin-top: 0; 
+  background-color: transparent; 
+  
 }
 
-.visit h3{
-  font-weight: 400;
-  color: #5e5e5e;
+.visit h3 {
+  font-weight: 100;
+  color: #5e5e5e; 
+  font-size: 1.2vw; 
+  text-transform: capitalize;
+  margin: -11px; 
+  margin-left:2vw;
+  padding-top: -10px;
 }
+
+.circle {
+  width: 3vw; /* Adjust size to make it proportional */
+  height: 3vw;
+  border-radius: 50%;
+  border: 1px solid #5e5e5e; /* Subtle border color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Set a clear background */
+  
+}
+
+
+
+.circle i {
+  font-size: 1.2vw; /* Adjust icon size */
+  color: #5e5e5e; /* Match icon color with border */
+}
+
 .motive{
+  display: flex;
+  justify-content: space-between;
+  margin: 7vw;
   padding: 3vw 10vw;
 }
 
 .motive h3{
   font-weight: 400;
   opacity: .5;
+}
+.motive p{
+  position: relative;
+  width: 85%;
+  right: 0;
+  text-align: right;
+  font-size: 2.1vw;
+  letter-spacing: -2.1px;
+  line-height: 1.5;
+}
+
+.motive span{
+  display: inline-block;
+ 
+  border-radius: 100px;
+  /* background-color: blueviolet; */
+  margin: 0 13px;
+  margin-bottom: -12.5px;
+}
+.oneSpan{
+  width: 80px;
+  height: 50px;
+  background-image: url(./Images/bluegirl.jpg);
+  background-position: 0% 60%;
+  background-size: cover;
+}
+.twoSpan{
+  width: 110px;
+  height: 50px;
+  background-image: url(./Images/shaljam.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+.threeSpan{
+  width: 80px;
+  height: 50px;
+  background-image: url(./Images/grass.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+.pictures{
+  margin-top: 8vw;
+  padding: 3vw;
+  padding-left: 20vw;
+  padding-right:12vw ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fristPic{
+  width: 18vw;
+}
+
+.fristPic .picimg{
+  width: 100%;
+  height: 24vw;
+  margin-bottom: 2vw;
+  background-color: aqua;
+}
+
+.picimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fristPic p,.secPic P {
+  font-size: 17px;
+  margin-top: 10px;
+  letter-spacing: -1px;
+  opacity: .7;
+}
+.fristPic h1,.secPic h1{
+  font-weight: 400;
+  font-size: 2.1vw;
+  letter-spacing: -1.8px;
+
+}
+
+.secPic .picimg{
+  width: 100%;
+  height: 24vw;
+  margin-bottom: 2vw;
+  background-color: aqua;
+}
+
+.secPic{
+  width: 25vw;
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+ 
+}
+
+
+.secPic .picimg{
+  width: 100%;
+  height: 38vw;
+  margin-bottom: 2vw;
+  background-color: aqua;
+}
+
+.secPic p{
+  text-align: right;
+  width: 70%;
+}
+
+.banner{
+  width: 100%;
+  margin-top: 8vw;
+   display: flex;
+  /* justify-content: space-around;  */
+  align-items: center;
+
+}
+
+.bimg{
+  width: 65%;
+  height: 60vh;
+  background-color: beige;
+}
+.bimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 70%;
+}
+
+.btext{
+  width: 35%;
+  padding: 0 3vw;
+}
+
+.btext h1{
+  font-size: 2.4vw;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.7px;
+}
+
+.btext p{
+  margin-top:20px ;
+  width: 60%;
+  opacity: .8;
+}
+.future{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.future video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) ;
+  width: 100%;
+  opacity: 0;
+  /* height: 100%; */
+ 
+}
+
+.ftext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 555;
+  background-color: white;
+  padding: 1.7vw 3vw;
+  border-radius: 10px;
+  /* box-shadow: 1px 1px  3px rgb(179, 176, 176)  ; */
+
+}
+
+.ftext button{
+  padding: .8vw 1.7vw;
+  font-size: .6vw;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 10px;
+  border-radius: 100px;
+  border: 2px solid #d8d0d0;
+  background-color: white;
+  color: #a19b9b;
 }
