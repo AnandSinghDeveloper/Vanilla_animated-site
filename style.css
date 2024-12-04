@@ -90,12 +90,12 @@
 }
 
 .susimagerapper img{
-  position: absolute;
-  top: 40%;
+  
+  /* top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  width: 140%;
-  height: 140%;
+  transform: translate(-50%,-50%); */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -254,7 +254,7 @@
   width: 100%;
   height: 24vw;
   margin-bottom: 2vw;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .picimg img{
@@ -280,7 +280,7 @@
   width: 100%;
   height: 24vw;
   margin-bottom: 2vw;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .secPic{
@@ -296,7 +296,7 @@
   width: 100%;
   height: 38vw;
   margin-bottom: 2vw;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .secPic p{
